@@ -11,13 +11,14 @@ def find_imgs(query):
     try:
         html = urlopen(newurl)
     except:
-        print("nah bro try again")
-        query = input("enter another page to search for: ")
+        print("Invalid search query, try again")
+        query = input("Enter another page to search for: ")
         find_imgs(query)
     else:
         soup = BeautifulSoup(html, 'html.parser')
         f = open("image_urls.txt","w")
         urls = soup.find_all('a', class_="image")
+        #format urls correctly before adding to file
         for x in urls:
             urlstr = str(x)
             urlstr = urlstr[22:]
