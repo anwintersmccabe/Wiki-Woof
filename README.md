@@ -1,2 +1,2 @@
 # Wiki-Woof
-A tool that, given a search query by the user, searches Wikipedia for it and creates a text file containing the image URLs
+A tool that, given a search query by the user, searches Wikipedia for it and creates a text file containing the URLs of the images on the page
