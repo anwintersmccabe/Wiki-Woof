@@ -24,7 +24,6 @@ def find_imgs(query):
             urlstr = urlstr[22:]
             endIndex = urlstr.find('>')
             urlstr = urlstr[:endIndex]
-            print(urlstr)
             f.write(urlstr+"\n")
         f.close()
     
